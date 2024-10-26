@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elevated Lifestyle</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+        background-color: #fafafa;
+      }
+
+      /* Navbar Styling */
+      nav {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      nav a {
+        color: white !important;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ff7f50 !important;
+      }
+
+      /* Parallax Section */
+      .parallax {
+        background: url('/mnt/data/An_elegant_and_inspiring_background_for_a_lifestyl.png') 
+          no-repeat center center;
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      }
+
+      .parallax h1 {
+        font-size: 4rem;
+        animation: fadeIn 2s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Card Hover Effects */
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
+
+      .card-img-top {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      /* Button Styles */
+      .btn-custom {
+        background-color: #ff7f50;
+        color: white;
+        border-radius: 30px;
+        padding: 10px 25px;
+      }
+
+      .btn-custom:hover {
+        background-color: #e35d3e;
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 2rem 0;
+      }
+
+      footer a {
+        color: #ff7f50;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Elevated Lifestyle</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-custom" href="#subscribe">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Parallax Section -->
+    <div class="parallax" id="home" style="background-image: url('https://files.oaiusercontent.com/file-rfUCmjQW0RC60W34xxvO6H7z?se=2024-10-26T05%3A46%3A08Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De1edb287-db74-4cec-91db-b869251a1442.webp&sig=i3q2GFPVRcXYWVubsanKSBN70JRmzfVPiG7FWCZdC/I%3D'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100%;">
+      <h1>Live Your Best Life</h1>
+    </div>
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="container my-5"
+      style="
+        background-image: url('/mnt/data/image.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="text-center mb-5">
+        <h2>Our Services</h2>
+        <p class="text-muted">Explore the ways we help you live better.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b"
+              class="card-img-top"
+              alt="Fitness"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Personal Fitness</h5>
+              <p class="card-text">
+                Tailored workout routines to keep you fit and active.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3"
+              class="card-img-top"
+              alt="Mindfulness"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mindfulness Coaching</h5>
+              <p class="card-text">
+                Reduce stress and embrace peace with guided meditation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="https://files.oaiusercontent.com/file-e50FG8Wx0DJEURGqvdEXj6ti?se=2024-10-26T05%3A27%3A06Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D4a5ed1bb-f4d8-429c-9ae9-6b0fa649856f.webp&sig=yeFtoPJpiyBkB2CSzDQhh2VzKq%2Bw2akuk74Es5zh/ig%3D"
+              class="card-img-top"
+              alt="Nutrition"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nutrition Plans</h5>
+              <p class="card-text">
+                Healthy eating made simple with customized meal plans.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">About</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1542744095-291d1f67b221"
+              class="img-fluid rounded"
+              alt="About"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Elevated Lifestyle</h3>
+            <p>
+              At Elevated Lifestyle, we strive to empower individuals by
+              offering a comprehensive range of wellness services designed to
+              enhance every aspect of your life. Below are some of the key
+              projects we have worked on to help our clients achieve their
+              personal goals and live their best lives.
+            </p>
+            <h3>Personal Fitness</h3>
+            <p>
+              Our customized fitness routines are created to suit individual
+              needs, helping clients maintain a healthy and active lifestyle.
+              Whether it’s weight loss, strength building, or general wellness,
+              our fitness programs have delivered exceptional results. Clients
+              have seen improvements in energy levels, body composition, and
+              overall health through our personalized approach.
+            </p>
+            <h3>Mindfulness Coaching</h3>
+            <p>
+              Through guided meditation and mindfulness practices, we have
+              helped countless individuals reduce stress and embrace a more
+              balanced and peaceful mindset. Our coaching sessions are tailored
+              to help clients integrate mindfulness into their daily routines,
+              promoting mental clarity and emotional well-being.
+            </p>
+            <h3>Nutrition Plans</h3>
+            <p>
+              Healthy eating is the foundation of wellness, and we have worked
+              with clients to develop personalized nutrition plans that meet
+              their specific dietary needs and goals. From weight management to
+              improved digestive health, our nutrition plans have made it easier
+              for clients to nourish their bodies and enjoy a more fulfilling
+              relationship with food.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Subscribe Section -->
+<section id="subscribe" class="text-center my-5">
+  <h2>Subscribe to Our Newsletter</h2>
+  <form class="row justify-content-center" onsubmit="showPopup(event)">
+    <div class="col-auto">
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-custom">Subscribe</button>
+    </div>
+  </form>
+</section>
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Get in touch with us on:</p>
+            <a href="https://wa.me/+6285315842506" class="btn btn-success" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/revanokahar__?igsh=MXRnd3g3ejNyM3pmOA%3D%3D" class="btn btn-primary" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="text-center">
+  <p>&copy; 2024 Elevated Lifestyle. All rights reserved.</p>
+  <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to show popup on subscribe -->
+<script>
+  function showPopup(event) {
+    event.preventDefault(); // Prevent form submission
+    alert("Thanks for subscribing to our web!");
+  }
+</script>
+  </body>
+</html>
